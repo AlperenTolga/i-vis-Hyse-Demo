@@ -1,0 +1,23 @@
+{
+  "name": "ivis-bom-hyse",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Visual construction & analysis of Bills of Materials (BoM) as a mixed graph, laid out with the HySE algorithm.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "test": "node tools/selftest.mjs",
+    "test:browser": "node tools/browser-smoke.mjs"
+  },
+  "dependencies": {
+    "cytoscape": "^3.31.0",
+    "cytoscape-context-menus": "^4.2.1",
+    "cytoscape-edgehandles": "^4.0.1",
+    "cytoscape-hyse": "github:iVis-at-Bilkent/cytoscape.js-hyse"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
